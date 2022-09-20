@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { WebSocketAPI } from './Models/WebSocketAPI ';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'chatt-app';
+ 
+  handleMessage(message){
+    //this.greeting = message;
+  }
 }

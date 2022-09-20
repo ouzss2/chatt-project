@@ -1,0 +1,81 @@
+<section>
+  
+    <div>
+      
+        <div class="containerx">
+          
+            <div class="vertical-menu overflow"  >
+              
+              <div id="rcorners1x" *ngFor="let c of Connected_People" (click)="ChangeData(c.name)" >
+                  <img class="rounded-circle" data-holder-rendered="true" src="./assets/images/image.png" alt="">
+                  <span>  &nbsp; &nbsp; &nbsp;  {{c.name}}</span>
+                </div>
+              
+            </div>
+          </div>
+          </div>
+   
+    <div>
+
+        <div class="containerh">
+            <div class="flex-container">
+                <div id="rcorners1">
+                    <img class="rounded-circle" data-holder-rendered="true" src="./assets/images/image.png" alt="">
+                    <span>  &nbsp; &nbsp; &nbsp;  {{userconnectednow}}</span>
+                    
+                    &nbsp; &nbsp; &nbsp;
+                    &nbsp; 
+                    
+                </div>
+                
+            </div>
+            
+            <div class="overflow">
+              <div class="card-body msg_card_body">
+                <div class="d-flex justify-content-start mb-4" *ngFor="let i of MessagesSent">
+                  <div class="msg_cotainer">
+                    {{i.content}}
+                   
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end mb-4" *ngFor="let i of Messagesreceived" >
+                  <div  class="msg_cotainer_send" style="text-align: right;">
+                    {{i.content}}
+                  </div>
+                </div>
+              </div> 
+            </div>
+        
+            <div id="rcorners12" style="display: flex;">
+              <input type="text" [(ngModel)]="name" class="form-control"  placeholder="Type Here !" name="name">
+                <span style="display:flex; margin:auto;"></span>
+                <button (click)="sendMessage()" class="button button1" type="submit">Send</button>
+            </div>
+            
+        </div>
+
+
+    </div>
+    
+  </section>
+
+
+            
+        
+ 
+
+
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
